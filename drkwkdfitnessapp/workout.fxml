@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="drkwkdfitnessapp.WorkoutController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="600.0" style="-fx-background-color: #07b7f2;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#returnToMenu" text="Return to Main Menu" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Text layoutX="165.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 Rep Max Calculator">
+         <font>
+            <Font name="Impact" size="32.0" />
+         </font>
+      </Text>
+      <TextField fx:id="weight" layoutX="300.0" layoutY="134.0" prefHeight="27.0" prefWidth="84.0" />
+      <Label layoutX="67.0" layoutY="139.0" text="Weight you can do for 4-6 Reps">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font></Label>
+      <ToggleButton fx:id="weightType" layoutX="400.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleToggleOn" style="-fx-background-color: #07b7f2;" text="Kg" />
+      <TextField fx:id="text2" editable="false" layoutX="301.0" layoutY="243.0" prefHeight="27.0" prefWidth="84.0" />
+      <TextField fx:id="text3" editable="false" layoutX="301.0" layoutY="286.0" prefHeight="27.0" prefWidth="84.0" />
+      <TextField fx:id="text4" editable="false" layoutX="301.0" layoutY="327.0" prefHeight="27.0" prefWidth="84.0" />
+      <Label layoutX="53.0" layoutY="246.0" text="70% of 1RM  (Best for endurance)">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="289.0" text="80% of 1RM (Best for muscle)">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="331.0" text="95% of 1RM (Best for strength) ">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text1" editable="false" layoutX="302.0" layoutY="197.0" prefHeight="27.0" prefWidth="84.0" />
+      <Label layoutX="127.0" layoutY="199.0" text="Your one rep max is : ">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="401.0" layoutY="202.0" text="Kg" />
+      <Label fx:id="label2" layoutX="401.0" layoutY="248.0" text="Kg" />
+      <Label fx:id="label3" layoutX="401.0" layoutY="291.0" text="Kg" />
+      <Label fx:id="label4" layoutX="401.0" layoutY="332.0" text="Kg" />
+      <Button layoutX="469.0" layoutY="136.0" mnemonicParsing="false" onAction="#calculate1RM" style="-fx-background-color: #07b7f2;" text="Find 1RM" />
+   </children>
+</AnchorPane>
